@@ -5,7 +5,7 @@ import { NavLink, Props } from "../NavLink/NavLink";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import MenuOverlay from "../MenuOverlay/MenuOverlay";
 import Image from "next/image";
-import LogoEB from '../../../public/eb-logo.svg'
+import LogoEB from '../../../../public/eb-logo.svg'
 
 const navLink: Props[] = [
   {
