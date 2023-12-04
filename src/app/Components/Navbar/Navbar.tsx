@@ -22,17 +22,17 @@ const navLink: Props[] = [
   },
 ];
 
-const Navbar = () => {
+const  Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-10 bg-[#121212] bg-opacity-100">
       <div className="flex flex-wrap items-center justify-between mx-auto px-4 py-2">
         <Link
-          href={"/"}
+          href={"/#"}
           className="text-1xl md:text-5xl text-white font-semibold "
         >
-          <Image src={LogoEB} alt="logo eb" width={80} height={80}/>
+          <h1 className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 ">Ezequiel</h1>
         </Link>
         <div className="mobile-menu block md:hidden">
           {!navbarOpen ? (
