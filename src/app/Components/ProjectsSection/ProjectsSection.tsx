@@ -7,39 +7,21 @@ import { motion, useInView } from "framer-motion";
 const projectsData: PropsCard[] = [
   {
     id: 1,
-    title: "Project 1",
-    description: "This is a description of project 1",
+    title: "Spootchat | Fullstack | Team Developer",
+    description: "Copy of Spotify with integrated chat for fans. Technologies: Express, React, Postgres and Sequelize",
     imgUrl: "images/projects/1.png",
     tag: ["All", "Web"],
-    gitUrl: "",
-    liveUrl: "",
+    gitUrl: "https://github.com/Eze-quielph/SpootChat_Frontend",
+    liveUrl: "https://spoot-chat-frontend-ljhqdpj5h-eze-quielph.vercel.app/",
   },
   {
     id: 2,
-    title: "Project 1",
-    description: "This is a description of project 1",
+    title: "Evento X | Fullstack | Team Developer",
+    description: "Marketplace for the sale of tickets to your event, Technologies: NestJs, NextJs, Sequelize and Postgres",
     imgUrl: "images/projects/2.png",
     tag: ["All", "Web"],
-    gitUrl: "",
-    liveUrl: "",
-  },
-  {
-    id: 3,
-    title: "Project 1",
-    description: "This is a description of project 1",
-    imgUrl: "images/projects/3.png",
-    tag: ["All", "Web"],
-    gitUrl: "",
-    liveUrl: "",
-  },
-  {
-    id: 4,
-    title: "Project 1",
-    description: "This is a description of project 1",
-    imgUrl: "images/projects/4.png",
-    tag: ["All", "Mobile"],
-    gitUrl: "",
-    liveUrl: "",
+    gitUrl: "https://github.com/Eze-quielph/SpootChat_Frontend",
+    liveUrl: "https://eventox-client-dun.vercel.app/",
   },
 ];
 
@@ -77,13 +59,13 @@ const ProjectsSection = () => {
           name="Web"
           isSelected={tag === "Web"}
         />
-        <ProjectTag
+        {/* <ProjectTag
           onClick={handleTagChange}
           name="Mobile"
           isSelected={tag === "Mobile"}
-        />
+  />*/}
       </div>
-      <ul  ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
+      <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12 items-center">
         {filteredProjectsTag.map((project, index) => (
           <motion.li
             key={index}
