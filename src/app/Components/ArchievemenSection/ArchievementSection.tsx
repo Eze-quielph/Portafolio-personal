@@ -37,14 +37,14 @@ const achievementsList: any[] = [
     value: "3",
   },
   {
-    metric: "Years",
-    value: "1",
+    metric: "Months",
+    value: "12",
   },
 ];
 
 const AchievementsSection = () => {
   return (
-    <div className="py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
+    <div className="py-8 px-4 mb-6 xl:gap-16 sm:py-16 xl:px-16">
       <div className="sm:border-[#33353F] sm:border rounded-md py-8 px-16 flex flex-col sm:flex-row items-center justify-between">
         {achievementsList.map((achievement, index) => {
           return (

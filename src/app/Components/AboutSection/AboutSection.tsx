@@ -66,8 +66,8 @@ const AboutSection = () => {
   };
 
   return (
-    <section className="text-white mt-12" id="about">
-      <div className="md:grid md:grid-cols-2 gap-8 items-center pu-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
+    <section className="text-white mt-4 mb-6"  id="about">
+      <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
         <Image
           src="/images/about-image.png"
           alt="about-image-desktop"
